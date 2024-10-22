@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/image.jpg') }}" alt="Robo Advisor">
+        <h2>Welcome to Robo Advisor</h2>
+        <form action="/financial_QA" method="post">
+            <input type="submit" value="Financial Q&A">
+        </form>
+        <form action="/singapore_joke" method="post">
+            <input type="submit" value="Singapore joke">
+        </form>
+        <form action="/SA" method="post">
+            <input type="submit" value="Sentiment Analysis">
+        </form>
+        <form action="/TM" method="post">
+            <input type="submit" value="Transfer Money">
+        </form>
+
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <title>Singapore Joke</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Singapore Joke 🇸🇬</h2>
+        <img src="{{ url_for('static', filename='images/encik_mcd.jpg') }}" alt="Singapore Joke">
+        <h4>Why couldn't encik order McSpicy upsize 🍔?</h4>
+        <h4>Because he's a regular! 😂 😂</h4>
+        <form action="/" method="post">
+            <input type="submit" value="Main">
+        </form>
+    </div>
+</body>
+</html>
