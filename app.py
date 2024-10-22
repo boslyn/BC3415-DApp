@@ -3,8 +3,7 @@ import google.generativeai as genai
 from textblob import TextBlob
 from transformers import pipeline
 
-api = "AIzaSyDSOMHPCfvCDEot0nLOsn8VTROVQvDn_sU"
-#api = os.getenv("MAKERSUITE_API_TOKEN") 
+api = os.getenv("MAKERSUITE_API_TOKEN") 
 genai.configure(api_key=api)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
