@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request
 import google.generativeai as genai
 from textblob import TextBlob
-from transformers import pipeline
+import os
 
 api = os.getenv("MAKERSUITE_API_TOKEN") 
 genai.configure(api_key=api)
